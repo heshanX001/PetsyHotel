@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSY Hotel</title>
+
+<!-- My Fonts (sour gummy)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- My Fonts (merriweather)-->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Icon Library from Frontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!-- Stylesheet -->
+<link rel="stylesheet" href="./CSS/services.css">
+
+</head>
+<body>
+<!-- Navigatin -->
+    <div id="navbar">
+        <img src="./Images/logo.png">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="menub"><img src="./Images/menu.png" id="menus"></div>
+    </div>
+<!-- services -->
+    <div id="service-topic">
+        <h1>Our Services</h1>
+    </div>
+
+    <div id="service-intro">
+        <div id="text">
+            <p>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to PETSY Hotel, your home away from home for both you and your furry companions!
+                 We are proud to offer a pet-friendly environment where your pets are not just welcome, 
+                 but treated like part of the family. Whether you're traveling for business or pleasure, our hotel provides spacious accommodations and a variety of amenities designed with both you and your pets in mind. 
+                 From cozy rooms to nearby walking trails, your pet will enjoy the comfort and relaxation they deserve. Come stay with us and experience the perfect getaway where pets are always part of the fun!</p>
+        </div>
+        <div id="image">
+            <img src="./Images/dogo.png">
+        </div>
+    </div>
+
+    <div id="introduction">
+        <h1>Our Special Services</h1>
+    </div>
+
+<!-- Special Services -->
+ <div>
+    <p class="topic">A comfortable room for you and your buddy !</p>
+    <div class="services" id="service1">
+        <div class="images">
+            <img src="./Images/room.jpg">
+        </div>
+    
+        <div class="service-text">
+            <p>Our pet-friendly rooms are designed to make both you and your furry friends feel comfortable and at ease. With spacious layouts, cozy bedding, and easy access to outdoor areas, your pet will have plenty of room to relax and enjoy their stay. We provide thoughtful amenities like pet beds, bowls, and treats to ensure your pet's comfort. Whether you're here for a night or a week, our pet-friendly rooms offer the perfect setting for you and your companion to unwind together.</p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <p class="topic">Feel free to play with your pal !</p>
+    <div class="services" id="service2">
+        <div class="service-text">
+            <p>Our pet-friendly play area is the perfect spot for your furry friends to stretch their legs and have some fun. Equipped with plenty of space to run, play, and socialize, it’s a safe and enjoyable environment for pets of all sizes. Whether your pet loves to fetch, explore, or simply relax outdoors, our play area offers a great place for them to burn off some energy while you unwind.</p>
+        </div>
+        <div class="images">
+            <img src="./Images/play.jpg">
+        </div>
+    </div>
+
+<div>
+    <p class="topic">Get delicious meals with your companian !</p>
+    <div class="services" id="service3">
+        <div class="images">
+            <img src="./Images/foods.jpg">
+        </div>
+        <div class="service-text">
+            <p>At our pet-friendly hotel, we understand that your pet’s needs are just as important as yours, which is why we offer a variety of pet-friendly food options. From nutritious meals to tasty treats, we provide high-quality food to keep your furry friend happy and healthy during their stay. Whether your pet has dietary restrictions or enjoys a special snack, we’re here to make sure their mealtime is as enjoyable as yours.</p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <p class="topic">We make sure you and your pet are relaxed ! </p>
+    <div class="services" id="service4">
+        <div class="service-text">
+            <p>Our pet-friendly hotel offers a unique spa experience for both you and your furry companion. Enjoy a relaxing massage or rejuvenating treatment in our spa, where we cater to both human and pet needs. Your pet can unwind with soothing grooming sessions or a gentle spa treatment, while you indulge in a calming experience of your own. It’s the perfect way for both of you to relax, recharge, and enjoy some well-deserved pampering together.</p>
+        </div>
+        <div class="images">
+            <img src="./Images/massage.jpg">
+        </div>
+    </div>
+</div>
+    <footer>
+        <div id="icons">
+            <i class="fa-brands fa-whatsapp icon"></i>
+            <i class="fa-brands fa-instagram icon"></i>
+            <i class="fa-brands fa-youtube icon"></i>
+        </div>
+        <div id="link">
+            <p class="flink"><a href="./index.html">Home</a></p>
+            <p class="flink"><a href="#">Services</a></p>
+            <p class="flink"><a href="./about.html">About</a></p>
+            <p class="flink"><a href="./contact.html">Contact</a></p>
+        </div>
+        <p id="foot">PETSY Hotel® 2024. All Right Reserved</p>
+    </footer>
+
+
+
+    <script>
+        var menubtn = document.getElementById("menub")
+        var navig = document.getElementById("navbar")
+        var menuc = document.getElementById("menus")
+
+        menubtn.onclick = function(){
+            if(menu.style.right == "-815px"){
+                menu.style.right = "0";
+                menuc.src = "images/close.png";
+            }
+            else{
+                menu.style.right = "-815px";
+                menuc.src = "images/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>

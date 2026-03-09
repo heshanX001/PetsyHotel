@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSY Hotel</title>
+
+<!-- My Fonts (sour gummy)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- My Fonts (merriweather)-->  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Icon Library from Frontawesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+<!-- Stylesheet -->
+<link rel="stylesheet" href="./CSS/contact.css">
+
+</head>
+<body>
+<!-- Navigatin -->
+    <div id="navbar">
+        <img src="./Images/logo.png">
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div id="menub"><img src="./Images/menu.png" id="menus"></div>
+    </div>
+<!-- Contact us Content -->
+    <div id="contact-topic">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div id="contact-intro">
+        <div id="text">
+            <p>"--Fell Free to contact us anytime!--"</p>
+        </div>
+    </div>
+
+    <div id="list">
+        <table>
+            <tr>
+                <td><i class="fa-solid fa-house idt"></i></td>
+                <td>: No123. Charles Road, Paris</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-envelope idt"></i></td>
+                <td>: petsyhotel@yahoo.com</td>
+            </tr>
+            <tr>
+                <td><i class="fa-solid fa-phone idt"></i></td>
+                <td>: +123 456 7890</td>
+            </tr>
+            <tr>
+                <td><i class="fa-brands fa-whatsapp idt "></i></td>
+                <td>: +112 333 4445</td>
+            </tr>
+        </table>
+    </div>
+   
+    <footer>
+        <div id="icons">
+            <i class="fa-brands fa-whatsapp icon"></i>
+            <i class="fa-brands fa-instagram icon"></i>
+            <i class="fa-brands fa-youtube icon"></i>
+        </div>
+        <div id="link">
+            <p class="flink"><a href="./index.html">Home</a></p>
+            <p class="flink"><a href="./services.html">Services</a></p>
+            <p class="flink"><a href="./about.html">About</a></p>
+            <p class="flink"><a href="#">Contact</a></p>
+        </div>
+        <p id="foot">PETSY Hotel® 2024. All Right Reserved</p>
+    </footer>
+
+
+
+    <script>
+        var menubtn = document.getElementById("menub")
+        var navig = document.getElementById("navbar")
+        var menuc = document.getElementById("menus")
+
+        menubtn.onclick = function(){
+            if(menu.style.right == "-815px"){
+                menu.style.right = "0";
+                menuc.src = "images/close.png";
+            }
+            else{
+                menu.style.right = "-815px";
+                menuc.src = "images/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>

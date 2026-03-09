@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --dark-blue:#1d4567;
+    --ash-blue:#5dd4e9;
+    --light-yello:#faf39b;
+    --light-orange:#ECB365;
+    --bg-color:#FFE6A9;
+    --browny:#54473F;
+
+    --Topic:6em;
+    --quote:2.5em;
+} 
+body{
+    /* overflow-x:hidden; */
+    background-color:var(--bg-color);
+}
+#navbar{
+    box-shadow:black 0px 2px 10px;
+    width:100%;
+    height: 130px;
+    background-color: var(--ash-blue);
+    border: 2px solid white;
+}
+#navbar img{
+    position: absolute;
+    display: flex;
+    width: 135px;
+    top: 0px;
+    margin: 10px 0px 0px 100px;
+}
+#menu{
+    background-color: var(--light-yello);
+    box-shadow:black 0px 2px 10px;
+    border-radius: 25px 0px 0px 25px;
+    width: 815px;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: -815px;
+    transition: .8s;
+}
+#menu ul{
+    /* margin-top: 80px; */
+    display: flex;
+}
+#menu li{
+    margin-top: 35px;
+    list-style-type: none;
+}
+#menu a{
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 23px;
+    padding: 20px;
+    font-size: 26px;
+    font-family: sour gummy;
+    color: var(--dark-blue);
+}
+#menu a:hover{
+    background-color: var(--light-orange);
+    color: var(--dblue);
+    transition: .5s;
+}
+#menub{
+	/* border:2px solid white; */
+    display: flex;
+    position:absolute;
+    width:50px;
+    height:50px;
+    background-position: center;
+    background-size: cover;
+    top:35px;
+    right:40px;
+    z-index: 1;
+}
+#menub img{
+    top: -10px;
+    right:0;
+    width: 45px;
+
+}
+#menub:hover{
+    cursor: pointer;
+}
+/* Services topic */
+#about-topic{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color:var(--dark-blue);
+    font-size: 2.5em;
+    font-family: merriweather;
+    text-decoration: overline;
+}
+#about-intro{
+    display: flex;
+    margin-top:2%;
+    justify-content: center;
+}
+#text{
+    font-size: 2em;
+    color: var(--dark-blue);
+    font-family: sour gummy;
+    font-weight: 500;
+    padding: 1.5%;
+    background-color: var(--light-orange);
+    width: 900px;
+    height: auto;
+    border: 5px solid var(--ash-blue);
+    border-radius: 25px;
+    animation: zoomin2 1.5s ease-out;
+    margin: 1%;
+}
+#hotel-image{
+    border-radius: 25px;
+    margin: 2%;
+    width: 500px;
+}
+#image{
+    animation: zoomin 1.5s ease-out;
+}
+@keyframes zoomin {
+    from{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes zoomin2 {
+    from{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#staff{
+    display: flex;
+    margin:2% 15% 6% 15%;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes scroll {
+    from{
+        opacity: 0;
+        transform: translateX(800px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
+}
+#staff img{
+    border: 3px solid var(--browny);
+    border-radius: 40px;
+    width: 300px;
+    margin:2% 6% 6% 6%;
+    animation: zoom-in-out;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#founder{
+    font-family: merriweather;
+    color: var(--dark-blue);
+}
+#title{
+    font-style: italic;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+#staffp{
+    margin: 30px 20px 30px 40px;
+    font-size: 25px;
+    color:var(--dark-blue);
+    font-family: sour gummy;
+}
+#reviews{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.reviw{
+    margin:5% 3% 10% 3%;
+    padding: 30px;
+    width: 300px;
+    height: 350px;
+    border: 2px solid var(--light-orange);
+    border-radius: 50px;
+    background-color: var(--light-orange);
+    transition: .7s;
+    animation: scroll2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes scroll2 {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.reviw:hover{
+    margin-top:50px;
+}
+.reviw img{
+    float: left;
+    width: 80px;
+    height: auto;
+}
+.reviw h1{
+    text-align: center;
+    color:var(--dark-blue);
+    font-size: 20px;
+    font-family: merriweather;
+}
+.reviw p{
+    margin-top: 20px;
+    text-align: center;
+    color:var(--browny);
+    font-size: 18px;
+    font-family: sour gummy;
+}
+.reviw .author{
+    margin-top: 20px;
+    text-align: left;
+    color:var(--cream);
+    font-size: 18px;
+    font-family: sour gummy;
+}
+
+footer{
+    background:var(--dark-blue);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 130px;
+}
+#foot{
+    text-align: center;
+    font-size: 20px;
+    font-family: Sour gummy;
+    color: wheat;
+}
+footer #link{
+    display: flex;
+    justify-content:center;
+    margin-bottom:10px;
+}
+footer #icons{
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    color: wheat;
+    font-size: 25px;
+    margin:20px 0 10px 50px;
+}
+.flink a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 22px;
+    font-family: sour gummy;
+    padding-left: 50px;
+}
